@@ -1,0 +1,137 @@
+/* ========MOBILE_MENU========*/
+.mobile-menu-container {
+  position: relative;
+  background-color: $primary-white-color;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 480px;
+  height: 796px;
+  display: block;
+  border: 2px solid turquoise;
+
+  color: $maine-text-color;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    // top: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+.mobile-menu-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background: $primary-white-color;
+  border: none;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.mobile-menu-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.site-nav {
+  margin-bottom: 302px;
+}
+
+.site-nav .link {
+  display: block;
+
+  color: $maine-text-color;
+  text-decoration: none;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.site-nav .current {
+  color: $accent-color;
+}
+
+.header-contact__icon--mail,
+.header-contact__icon--tel {
+  display: none;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+}
+.header-contact__link--tel {
+  color: $accent-color;
+  font-size: 34px;
+  line-height: 1.176;
+  text-decoration: none;
+}
+
+.header-contact__link--mail {
+  color: $secondary-text-color;
+  font-size: 24px;
+  line-height: 1.167;
+  text-decoration: none;
+}
+
+// .menu-container__flex {
+//   display: flex;
+//   flex-direction: column;
+//   // не працює ЧОМУ!!!
+//   // justify-content: space-between;
+// }
+.mobile-menu-soclink-list {
+  display: flex;
+}
+
+.mobile-menu-soclink-link {
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  padding-right: 10px;
+  color: $accent-color;
+  // font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  // letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+// .mobile-menu-soclink-link:not(:last-child)::after{}
+
+.mobile-menu-soclink-link::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  display: block;
+  height: 22px;
+  width: 1px;
+  background-color: $secondary-text-color;
+}

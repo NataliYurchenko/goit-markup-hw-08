@@ -1,0 +1,66 @@
+/* ======================FORM FOOTER=========================== */
+
+// .footer-form {
+//   margin-left: 93px;
+
+//   & .sign-up {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+.footer-form-email {
+  margin: 0;
+  padding: 0;
+  // padding-left: 16px;
+  width: 358px;
+  height: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.185px;
+  letter-spacing: 0.03em;
+  color: whitesmoke;
+
+  background: $footer-background;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-sign-up-bth {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  // margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875px;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-origin: border-box;
+
+  border: transparent;
+  cursor: pointer;
+}
+
+.sign-up-icon {
+  // margin-left: 10px;
+  fill: $primary-white-color;
+}

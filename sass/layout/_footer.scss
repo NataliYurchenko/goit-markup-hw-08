@@ -1,0 +1,88 @@
+/* ==============     FOOTER  =================== */
+
+.footer {
+  background-color: $footer-background;
+
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+
+  //   & .container {
+  //     display: flex;
+  //     align-items: baseline;
+  //     justify-content: space-between;
+  //   }
+  // }
+
+  // .footer-logo-address,
+  // .footer-join-us,
+  // .footer-sign-up {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // .footer-join-us {
+  //   margin-left: 70px;
+}
+
+.footer .socnetworks {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .soclink {
+  color: $primary-white-color;
+  background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    outline: none;
+  }
+}
+
+.footer-logo-address > .logo {
+  padding: 0px;
+  // margin-bottom: 20px;
+}
+
+.basement .web,
+.basement .footer-studio {
+  display: inline-block;
+  padding: 0;
+}
+
+.basement .link {
+  // margin-bottom: 9px;
+  display: inline-block;
+  line-height: 1.71;
+}
+
+.basement .tel {
+  margin-bottom: 0;
+}
+
+.footer-address > .link {
+  color: $primary-white-color;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.basement .mail,
+.basement .tel {
+  color: #ffffff99;
+  text-decoration: none;
+}
+
+.footer b {
+  // margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}

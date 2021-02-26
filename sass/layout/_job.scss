@@ -1,0 +1,67 @@
+/*=============JOB========================*/
+@media screen and (max-width: 1199px) {
+  .job {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job {
+    padding-bottom: 94px;
+
+    &-list {
+      display: flex;
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+
+    &-item {
+      margin: 0px;
+    }
+  }
+
+  .job-list .job-item + .job-item {
+    margin-left: 30px;
+  }
+
+  .job h2,
+  .team h2,
+  .clients h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .job img,
+  .team img,
+  .portfolio img {
+    display: block;
+  }
+
+  .job-thumb {
+    position: relative;
+  }
+
+  .job-text {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+
+    color: $primary-white-color;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 27px 0;
+  }
+}

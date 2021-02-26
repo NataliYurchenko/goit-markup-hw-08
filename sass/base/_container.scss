@@ -1,0 +1,37 @@
+/*================CONTAINER===============*/
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+// }
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container.page-header {
+  display: flex;
+  justify-content: space-between;
+  // align-items: flex-start;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

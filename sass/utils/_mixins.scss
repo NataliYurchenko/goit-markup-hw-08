@@ -1,0 +1,23 @@
+/* ФАЙЛ НЕ ПІДКЛЮЧАЛА_ТРЕНУВАЛАСЯ. У COMMON 1 ЛОКАЛЬНО ПІДКЛЮЧЕНИЙ МІКСИН*/
+
+@mixin font($fs: 14px, $fw: 400, $lh: 1.12, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+b {
+  @include font($lh: 1.99);
+}
+
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+div {
+  @include abs-position(100px, 100px, auto, auto);
+}

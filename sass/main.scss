@@ -1,0 +1,24 @@
+/*UTILS*/
+@import './utils/variables';
+@import './utils/visually-hidden';
+/*BASE*/
+@import './base/common';
+@import './base/container';
+/*COMPONENTS*/
+@import './components/logo';
+@import './components/btn';
+@import './components/soc-links-team';
+
+/* LAYOUT*/
+@import './layout/page-header';
+@import './layout/portfolio';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/job';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/footer-form';
+@import './layout/modal';
+@import './layout/modal-form';
+@import './layout/mobile-menu';

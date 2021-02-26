@@ -1,0 +1,56 @@
+/* ==================   TEAM  =============== */
+
+.team {
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+
+  background-color: $button-secondary-background;
+
+  &-list {
+    // display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  & .item {
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &-link {
+    color: $maine-text-color;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.192;
+  text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.team p {
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0px;
+}
+
+.team img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}

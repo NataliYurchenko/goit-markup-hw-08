@@ -1,0 +1,182 @@
+/* =======================MODAL FORM======================= */
+// .modal-form {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.call-back {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $maine-text-color;
+}
+
+.name-label,
+.tel-label,
+.email-label,
+.comment-label {
+  display: inline-block;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
+.name-input,
+.tel-input,
+.email-input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.comment-input {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.name-input:focus,
+.tel-input:focus,
+.email-input:focus,
+.comment-input:focus {
+  border: 1px solid $accent-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  transition: border $transition-duration $transition-timing-function;
+}
+
+button.form-send {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  background-origin: border-box;
+  border: transparent;
+
+  &:focus {
+    background: $button-primary-focus-bg-color;
+    background-origin: border-box;
+    border: transparent;
+  }
+}
+
+// div.relative {
+//   position: relative;
+// }
+.modal-form .name-icon,
+.modal-form .tel-icon,
+.modal-form .email-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.modal-form input:focus ~ svg {
+  fill: $accent-color;
+  transition: fill $transition-duration $transition-timing-function;
+}
+
+/* ==========NEW CHECKBOX======================================== */
+
+.checkbox0 {
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-label0 {
+  margin-left: 28px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border-radius: 2px;
+    background-image: url(../images/maine/icon-empty.svg);
+    background-origin: border-box;
+  }
+}
+
+.exept-form-field0 {
+  position: relative;
+  /* box-sizing: content-box; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.exept-form-field0 a {
+  color: $accent-color;
+}
+
+.comment-form-field {
+  margin-bottom: 20px;
+}
+
+.exept0 {
+  margin-left: 4px;
+}
+
+.checkbox0:checked + .checkbox-label0::after {
+  background-image: url(../images/maine/icon-check.svg);
+  background-origin: border-box;
+  border-radius: 2px;
+  transition: fill $transition-duration $transition-timing-function;
+}
+.name-form-field,
+.tel-form-field,
+.email-form-field {
+  margin-bottom: 10px;
+}
