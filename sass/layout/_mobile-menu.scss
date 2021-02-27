@@ -1,11 +1,13 @@
 /* ========MOBILE_MENU========*/
+
 .mobile-menu-container {
   position: relative;
+  display: none;
   background-color: $primary-white-color;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-  width: 480px;
+  max-width: 480px;
   height: 796px;
   display: block;
   border: 2px solid turquoise;
@@ -17,18 +19,27 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 767px) {
+  &.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
     display: none;
     position: absolute;
     // top: 100%;
     top: 0;
     left: 0;
     width: 100%;
-
-    &.is-open {
-      display: block;
-    }
   }
+}
+
+.mobile-menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  // padding: 10px 0;
 }
 
 .mobile-menu-btn-close {
@@ -52,27 +63,22 @@
   }
 }
 
-.mobile-menu-btn {
-  width: 40px;
-  height: 40px;
-}
-
-.site-nav {
+.site-nav-list {
   margin-bottom: 302px;
 }
 
-.site-nav .link {
+.site-nav-list .link {
   display: block;
 
   color: $maine-text-color;
   text-decoration: none;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.site-nav .current {
+.site-nav-list .current {
   color: $accent-color;
 }
 
@@ -134,4 +140,7 @@
   height: 22px;
   width: 1px;
   background-color: $secondary-text-color;
+}
+.mobile-menu-soclink-link--Linkedin::after {
+  display: none;
 }

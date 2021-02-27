@@ -41,29 +41,30 @@ body.modal-open {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.container.page-header {
-  display: flex;
-  justify-content: space-between;
+  outline: springgreen;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
+}
+
+.container.page-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*COMPONENTS*/
@@ -908,11 +909,12 @@ button.form-send:focus {
 /* ========MOBILE_MENU========*/
 .mobile-menu-container {
   position: relative;
+  display: none;
   background-color: #ffffff;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-  width: 480px;
+  max-width: 480px;
   height: 796px;
   display: block;
   border: 2px solid turquoise;
@@ -924,7 +926,11 @@ button.form-send:focus {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 767px) {
+.mobile-menu-container.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
   .mobile-menu-container {
     display: none;
     position: absolute;
@@ -932,9 +938,12 @@ button.form-send:focus {
     left: 0;
     width: 100%;
   }
-  .mobile-menu-container.is-open {
-    display: block;
-  }
+}
+
+.mobile-menu-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .mobile-menu-btn-close {
@@ -955,26 +964,21 @@ button.form-send:focus {
   fill: #2196f3;
 }
 
-.mobile-menu-btn {
-  width: 40px;
-  height: 40px;
-}
-
-.site-nav {
+.site-nav-list {
   margin-bottom: 302px;
 }
 
-.site-nav .link {
+.site-nav-list .link {
   display: block;
   color: #212121;
   text-decoration: none;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.site-nav .current {
+.site-nav-list .current {
   color: #2196f3;
 }
 
@@ -1027,5 +1031,9 @@ button.form-send:focus {
   height: 22px;
   width: 1px;
   background-color: #757575;
+}
+
+.mobile-menu-soclink-link--Linkedin::after {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,28 +28,29 @@
           ><span class="logo header-studio">Studio</span>
         </a>
 
-        <div class="mobile-menu-container" id="menu-container">
-          <button type="button" class="mobile-menu-btn-close">
-            <svg width="40" height="40">
-              <use
-                class="icon-cross"
-                href="./images/maine/sprite.svg#icon-close "
-              ></use>
+        <div
+          class="mobile-menu-container is-open"
+          id="menu-container"
+          data-menu
+        >
+          <button type="button" class="mobile-menu-btn-close" data-menu-close>
+            <svg class="icon-cross" width="40" height="40">
+              <use href="./images/maine/sprite.svg#icon-close "></use>
             </svg>
           </button>
           <!-- <div class="menu-container__flex"> -->
-          <ul class="site-nav list">
-            <li class="item">
+          <ul class="site-nav-list list">
+            <li class="site-nav-list__item">
               <a class="link current" href="./" target="_blank"
                 ><span>Студия</span></a
               >
             </li>
-            <li class="item">
+            <li class="site-nav-list__item">
               <a class="link" href="./portfolio.html" target="_blank"
                 >Портфолио</a
               >
             </li>
-            <li class="item">
+            <li class="site-nav-list__item">
               <a class="link" href="./" target="_blank">Контакти</a>
             </li>
           </ul>
@@ -103,7 +104,7 @@
             <li class="mobile-menu-soclink-list-item item">
               <a
                 href=""
-                class="mobile-menu-soclink-link Linkedin link"
+                class="mobile-menu-soclink-link mobile-menu-soclink-link--Linkedin link"
                 target="blank"
               >
                 Linkedin
@@ -112,20 +113,11 @@
           </ul>
         </div>
 
-        <button
-          type="button"
-          class="mobile-menu-btn"
-          aria-label="Переключатель"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        ></button>
-        <svg width="40" height="40">
-          <use
-            class="icon-menu"
-            href="./images/maine/sprite.svg#icon-mobile-menu "
-          ></use>
-        </svg>
+        <button type="button" class="mobile-menu-btn" data-menu-button>
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/maine/sprite.svg#icon-mob-menu "></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -694,7 +686,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/form.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu-btn.js"></script>
   </body>
