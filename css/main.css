@@ -65,6 +65,7 @@ body.modal-open {
 .container.page-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*COMPONENTS*/
@@ -207,16 +208,27 @@ body.modal-open {
   }
 }
 
-.mobile-menu-btn .icon-cross {
-  display: none;
+.mobile-menu-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: none;
 }
 
-.mobile-menu-btn.is-open .icon-cross {
-  display: block;
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn-close {
+    display: none;
+  }
 }
 
-.mobile-menu-btn.is-open .icon-menu {
-  display: none;
+.mobile-menu-btn-close:hover, .mobile-menu-btn-close:focus {
+  fill: #2196f3;
 }
 
 /* ========= soc-links-team================ */
@@ -908,7 +920,7 @@ button.form-send:focus {
 
 /* ========MOBILE_MENU========*/
 .mobile-menu-container {
-  position: relative;
+  position: absolute;
   display: none;
   background-color: #ffffff;
   padding-left: 40px;
@@ -916,7 +928,6 @@ button.form-send:focus {
   padding-bottom: 48px;
   max-width: 480px;
   height: 796px;
-  display: block;
   border: 2px solid turquoise;
   color: #212121;
   font-family: Roboto;
@@ -928,44 +939,43 @@ button.form-send:focus {
 
 .mobile-menu-container.is-open {
   display: block;
+  position: absolute;
+  top: 0.1px;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-container {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    min-width: 768px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
   }
 }
 
-.mobile-menu-btn {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-menu-btn-close {
-  position: absolute;
-  top: 8px;
-  right: 15px;
+.site-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: #ffffff;
-  border: none;
-  box-sizing: border-box;
-}
-
-.mobile-menu-btn-close:hover, .mobile-menu-btn-close:focus {
-  fill: #2196f3;
+  justify-content: space-between;
 }
 
 .site-nav-list {
   margin-bottom: 302px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-list {
+    margin-bottom: 0;
+    margin-left: 88px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site-nav-list .link {
@@ -974,12 +984,21 @@ button.form-send:focus {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav-list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .site-nav-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.site-nav-list .current {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .site-nav-list__item:not(:last-child) {
+    margin: 0;
+  }
 }
 
 .header-contact__icon--mail,
@@ -987,10 +1006,28 @@ button.form-send:focus {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contact__icon--mail,
+  .header-contact__icon--tel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: #757575;
+    margin-right: 8px;
+  }
+}
+
 .header-contact {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact {
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 .header-contact__link--tel {
@@ -1007,8 +1044,24 @@ button.form-send:focus {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contact__link--mail,
+  .header-contact__link--tel {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
 .mobile-menu-soclink-list {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-soclink-list {
+    display: none;
+  }
 }
 
 .mobile-menu-soclink-link {
@@ -1035,5 +1088,30 @@ button.form-send:focus {
 
 .mobile-menu-soclink-link--Linkedin::after {
   display: none;
+}
+
+.site-nav-list__item .current {
+  position: relative;
+  display: block;
+  color: #2196f3;
+}
+
+.site-nav-list__item .current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav-list__item .current::after {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
