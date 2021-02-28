@@ -960,6 +960,13 @@ button.form-send:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mobile-menu-container {
+    border: 2px solid red;
+    width: 1200px;
+  }
+}
+
 .site-nav {
   display: flex;
   justify-content: space-between;
@@ -1027,6 +1034,12 @@ button.form-send:focus {
   .header-contact {
     margin: 0;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    flex-direction: row;
   }
 }
 
