@@ -1,8 +1,8 @@
 /* =======================MODAL FORM======================= */
-// .modal-form {
-//   display: flex;
-//   flex-direction: column;
-// }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 
 .call-back {
   margin-top: 0;
@@ -66,9 +66,9 @@
 }
 
 button.form-send {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 
@@ -97,9 +97,9 @@ button.form-send {
   }
 }
 
-// div.relative {
-//   position: relative;
-// }
+div.relative {
+  position: relative;
+}
 .modal-form .name-icon,
 .modal-form .tel-icon,
 .modal-form .email-icon {
