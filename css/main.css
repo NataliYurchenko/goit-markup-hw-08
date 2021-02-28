@@ -198,7 +198,7 @@ body.modal-open {
   background-color: transparent;
 }
 
-.mobile-menu-btn:hover, .mobile-menu-btn:hover {
+.mobile-menu-btn:hover, .mobile-menu-btn:focus {
   color: #2196f3;
 }
 
@@ -228,7 +228,12 @@ body.modal-open {
 }
 
 .mobile-menu-btn-close:hover, .mobile-menu-btn-close:focus {
-  fill: #2196f3;
+  color: #2196f3;
+}
+
+.icon-menu,
+.icon-cross {
+  fill: currentColor;
 }
 
 /* ========= soc-links-team================ */
@@ -952,7 +957,7 @@ button.form-send:focus {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    min-width: 768px;
+    min-width: 619px;
     height: 100%;
     font-weight: 500;
     font-size: 14px;
@@ -963,7 +968,7 @@ button.form-send:focus {
 @media screen and (min-width: 1200px) {
   .mobile-menu-container {
     border: 2px solid red;
-    width: 1200px;
+    min-width: 1040px;
   }
 }
 
@@ -985,10 +990,20 @@ button.form-send:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav-list {
+    margin-left: 93px;
+  }
+}
+
 .site-nav-list .link {
   display: block;
   color: #212121;
   text-decoration: none;
+}
+
+.site-nav-list .link:hover, .site-nav-list .link:hover {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -1004,13 +1019,15 @@ button.form-send:focus {
 
 @media screen and (min-width: 768px) {
   .site-nav-list__item:not(:last-child) {
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 
 .header-contact__icon--mail,
 .header-contact__icon--tel {
   display: none;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -1019,7 +1036,6 @@ button.form-send:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: #757575;
     margin-right: 8px;
   }
 }
@@ -1035,11 +1051,17 @@ button.form-send:focus {
     margin: 0;
     flex-direction: column;
   }
+  .header-contact .header-contact__item--mail {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header-contact {
     flex-direction: row;
+  }
+  .header-contact .header-contact__item--mail {
+    margin-bottom: 0px;
   }
 }
 
@@ -1050,6 +1072,19 @@ button.form-send:focus {
   text-decoration: none;
 }
 
+.header-contact__link--tel:hover, .header-contact__link--tel:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__link--tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
 .header-contact__link--mail {
   color: #757575;
   font-size: 24px;
@@ -1057,13 +1092,34 @@ button.form-send:focus {
   text-decoration: none;
 }
 
+.header-contact__link--mail:hover, .header-contact__link--mail:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__link--mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-contact__link--mail,
   .header-contact__link--tel {
+    display: flex;
     color: #757575;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__link--mail,
+  .header-contact__link--tel {
+    font-size: 14px;
+    line-height: 1.13;
   }
 }
 
@@ -1099,10 +1155,6 @@ button.form-send:focus {
   background-color: #757575;
 }
 
-.mobile-menu-soclink-link--Linkedin::after {
-  display: none;
-}
-
 .site-nav-list__item .current {
   position: relative;
   display: block;
@@ -1126,5 +1178,14 @@ button.form-send:focus {
   .site-nav-list__item .current::after {
     display: none;
   }
+}
+
+.mobile-menu-soclink-link--Linkedin::after {
+  display: none;
+}
+
+.icon-menu,
+.icon-cross {
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

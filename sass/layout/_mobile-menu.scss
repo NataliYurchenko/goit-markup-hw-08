@@ -53,7 +53,7 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    min-width: 768px;
+    min-width: 619px;
     height: 100%;
 
     font-weight: 500;
@@ -62,7 +62,7 @@
   }
   @media screen and (min-width: 1200px) {
     border: 2px solid red;
-    width: 1200px;
+    min-width: 1040px;
   }
 }
 
@@ -79,13 +79,19 @@
     display: flex;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav-list .link {
   display: block;
-
   color: $maine-text-color;
   text-decoration: none;
+  &:hover,
+  &:hover {
+    color: $accent-color;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -95,18 +101,20 @@
 .site-nav-list__item:not(:last-child) {
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 
 .header-contact__icon--mail,
 .header-contact__icon--tel {
   display: none;
+  fill: currentColor;
+
   @media screen and (min-width: 768px) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: $secondary-text-color;
     margin-right: 8px;
   }
 }
@@ -115,19 +123,42 @@
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 64px;
+
   @media screen and (min-width: 768px) {
     margin: 0;
     flex-direction: column;
+    .header-contact__item--mail {
+      margin-bottom: 10px;
+    }
   }
+
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+
+    .header-contact__item--mail {
+      margin-bottom: 0px;
+    }
   }
 }
+
 .header-contact__link--tel {
   color: $accent-color;
   font-size: 34px;
   line-height: 1.176;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
 }
 
 .header-contact__link--mail {
@@ -135,15 +166,31 @@
   font-size: 24px;
   line-height: 1.167;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .header-contact__link--mail,
-  .header-contact__link--tel {
+.header-contact__link--mail,
+.header-contact__link--tel {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
     color: $secondary-text-color;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.167;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.13;
   }
 }
 
@@ -175,9 +222,6 @@
   width: 1px;
   background-color: $secondary-text-color;
 }
-.mobile-menu-soclink-link--Linkedin::after {
-  display: none;
-}
 
 .site-nav-list__item .current {
   position: relative;
@@ -199,4 +243,12 @@
       display: none;
     }
   }
+}
+.mobile-menu-soclink-link--Linkedin::after {
+  display: none;
+}
+
+.icon-menu,
+.icon-cross {
+  fill: currentColor;
 }

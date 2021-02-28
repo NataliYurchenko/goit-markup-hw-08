@@ -100,7 +100,7 @@
   background-color: transparent;
 
   &:hover,
-  &:hover {
+  &:focus {
     color: $accent-color;
   }
 
@@ -129,8 +129,13 @@
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    color: $accent-color;
   }
+}
+
+.icon-menu,
+.icon-cross {
+  fill: currentColor;
 }
 
 // .mobile-menu-btn .icon-cross {
