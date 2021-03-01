@@ -45,6 +45,11 @@
     top: 0.1px;
   }
 
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%) rotate(1turn);
+
   @media screen and (min-width: 768px) {
     border: 2px solid rebeccapurple;
     display: flex;
@@ -251,4 +256,24 @@
 .icon-menu,
 .icon-cross {
   fill: currentColor;
+}
+.header-contact__icon--mail {
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.header-contact__icon--tel {
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }

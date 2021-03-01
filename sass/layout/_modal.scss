@@ -31,6 +31,14 @@
   transition: transform $transition-duration $transition-timing-function;
   /* transform: translate(-50%, -50%) scale(1); */
   transform: translate(-50%, -50%) rotate(1turn);
+
+  @media screen and (max-width: 1199px) {
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -62,14 +70,14 @@
   /* outline: none; */
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: color $transition-duration $transition-timing-function;
+  }
 }
 
 .icon-close {
   fill: $header-studio-color;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-    transition: fill $transition-duration $transition-timing-function;
-  }
 }

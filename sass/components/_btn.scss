@@ -102,6 +102,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    // transition: fill $transition-duration $transition-timing-function;
   }
 
   @media screen and (min-width: 768px) {
@@ -130,6 +131,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    transition: fill $transition-duration $transition-timing-function;
   }
 }
 

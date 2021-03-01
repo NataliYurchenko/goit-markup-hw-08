@@ -229,6 +229,7 @@ body.modal-open {
 
 .mobile-menu-btn-close:hover, .mobile-menu-btn-close:focus {
   color: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-menu,
@@ -721,6 +722,16 @@ body.modal-open {
   transform: translate(-50%, -50%) rotate(1turn);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   /* transform: translate(-50%, -50%) scale(0.9); */
   transform: translate(-50%, -50%) rotate(0deg);
@@ -749,13 +760,13 @@ body.modal-open {
   cursor: pointer;
 }
 
-.icon-close {
-  fill: #000000;
+.btn-modal-close:hover, .btn-modal-close:focus {
+  color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:hover, .icon-close:focus {
-  fill: #2196f3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.icon-close {
+  fill: #000000;
 }
 
 /* =======================MODAL FORM======================= */
@@ -764,7 +775,7 @@ body.modal-open {
   flex-direction: column;
 }
 
-.call-back {
+.modal-form-text {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -773,6 +784,13 @@ body.modal-open {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form-text {
+    font-weight: 20px;
+    line-height: 1.5;
+  }
 }
 
 .name-label,
@@ -791,7 +809,7 @@ body.modal-open {
 .name-input,
 .tel-input,
 .email-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -822,7 +840,7 @@ body.modal-open {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button.form-send {
+.button-form-send {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -845,7 +863,7 @@ button.form-send {
   border: transparent;
 }
 
-button.form-send:focus {
+.button-form-send:focus {
   background: #188ce8;
   background-origin: border-box;
   border: transparent;
@@ -887,6 +905,13 @@ div.relative {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox-label0 {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
 .checkbox-label0::after {
   position: absolute;
   top: 50%;
@@ -920,6 +945,13 @@ div.relative {
 
 .exept0 {
   margin-left: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .exept0 {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 }
 
 .checkbox0:checked + .checkbox-label0::after {
@@ -1199,5 +1231,33 @@ div.relative {
 .icon-menu,
 .icon-cross {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
