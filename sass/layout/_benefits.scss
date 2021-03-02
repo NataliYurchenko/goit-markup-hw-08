@@ -5,7 +5,6 @@
   padding-bottom: 60px;
 
   &-div-icon {
-    // text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,10 +39,6 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    padding-bottom: 45px;
-    &__item:not(:last-child) {
-      margin-bottom: 15px;
-    }
     &-list {
       display: flex;
       flex-wrap: wrap;
@@ -56,6 +51,10 @@
     }
     &-list__title {
       text-align: left;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
     }
   }
 
@@ -79,6 +78,7 @@
       // flex-basis: calc(100% / 4 - 30px);
       flex-basis: calc((100% - 120px) / 4);
     }
+
     &-list__title {
       text-align: left;
     }
