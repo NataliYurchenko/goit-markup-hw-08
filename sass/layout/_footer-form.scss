@@ -10,10 +10,10 @@
 // }
 
 .footer-form-email {
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-  // padding-left: 16px;
-  width: 358px;
+  padding-left: 16px;
+  width: 100%;
   height: 50px;
 
   font-family: Roboto;
@@ -36,13 +36,14 @@
 }
 
 .footer-sign-up-bth {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 
   width: 200px;
   height: 50px;
+
   // margin-left: 12px;
 
   font-weight: 700;
@@ -61,6 +62,6 @@
 }
 
 .sign-up-icon {
-  // margin-left: 10px;
+  margin-left: 10px;
   fill: $primary-white-color;
 }

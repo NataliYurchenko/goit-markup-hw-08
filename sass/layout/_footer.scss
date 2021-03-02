@@ -2,87 +2,98 @@
 
 .footer {
   background-color: $footer-background;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  &-logo-address > .logo {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
 
-  //   & .container {
-  //     display: flex;
-  //     align-items: baseline;
-  //     justify-content: space-between;
-  //   }
-  // }
+  & .link {
+    margin-bottom: 9px;
+    display: inline-block;
+    line-height: 1.714;
+  }
 
-  // .footer-logo-address,
-  // .footer-join-us,
-  // .footer-sign-up {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  & .tel {
+    margin-bottom: 60px;
+  }
 
-  // .footer-join-us {
-  //   margin-left: 70px;
-}
+  &-address > .link {
+    color: $primary-white-color;
+    font-style: normal;
+    text-decoration: none;
+  }
 
-.footer .socnetworks {
-  margin: 0;
-  padding: 0;
-}
+  .basement .mail,
+  .basement .tel {
+    color: #ffffff99;
+    text-decoration: none;
+  }
 
-.footer .soclink {
-  color: $primary-white-color;
-  background: rgba(255, 255, 255, 0.1);
+  & b {
+    display: block;
+    margin-bottom: 20px;
 
-  transition: background-color $transition-duration $transition-timing-function,
-    box-shadow $transition-duration $transition-timing-function;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    outline: none;
+  & .socnetworks {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  .soclink {
+    color: $primary-white-color;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color $transition-duration
+        $transition-timing-function,
+      box-shadow $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      outline: none;
+    }
+  }
+  .soclink-icon {
+    fill: $primary-white-color;
   }
 }
 
-.footer-logo-address > .logo {
-  padding: 0px;
-  // margin-bottom: 20px;
-}
+// .footer .socnetworks {
+//   margin: 0;
+//   padding: 0;
+// }
 
-.basement .web,
-.basement .footer-studio {
-  display: inline-block;
-  padding: 0;
-}
+//   .footer .container {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+//   }
+// }
 
-.basement .link {
-  // margin-bottom: 9px;
-  display: inline-block;
-  line-height: 1.71;
-}
+// .footer-logo-address,
+// .footer-join-us,
+// .footer-sign-up {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.basement .tel {
-  margin-bottom: 0;
-}
+// .footer-join-us {
+//   margin-left: 70px;
 
-.footer-address > .link {
-  color: $primary-white-color;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.basement .mail,
-.basement .tel {
-  color: #ffffff99;
-  text-decoration: none;
-}
-
-.footer b {
-  // margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-}
+// .basement .web,
+// .basement .footer-studio {
+//   display: inline-block;
+//   padding: 0;
+// }

@@ -74,6 +74,14 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
 /*COMPONENTS*/
 /*=========================LOGO=============================*/
 .logo {
@@ -659,7 +667,9 @@ img {
 }
 
 .clients h2 {
+  margin-top: 0;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .clients-list {
@@ -670,7 +680,14 @@ img {
 
 .clients .item {
   margin: 15px;
-  flex-basis: calc(100% / 4 - 60px);
+  flex-basis: calc((100% - 60px) / 2);
+  height: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients .item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -678,14 +695,8 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  -list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .item {
-    width: 170px;
-    height: 90px;
+  .clients .item {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
@@ -744,11 +755,53 @@ img {
 /* ==============     FOOTER  =================== */
 .footer {
   background-color: #2f303a;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo-address > .logo {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.footer .link {
+  margin-bottom: 9px;
+  display: inline-block;
+  line-height: 1.714;
+}
+
+.footer .tel {
+  margin-bottom: 60px;
+}
+
+.footer-address > .link {
+  color: #ffffff;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer .basement .mail,
+.footer .basement .tel {
+  color: #ffffff99;
+  text-decoration: none;
+}
+
+.footer b {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer .socnetworks {
   margin: 0;
-  padding: 0;
+  padding-bottom: 60px;
 }
 
 .footer .soclink {
@@ -762,51 +815,16 @@ img {
   outline: none;
 }
 
-.footer-logo-address > .logo {
-  padding: 0px;
-}
-
-.basement .web,
-.basement .footer-studio {
-  display: inline-block;
-  padding: 0;
-}
-
-.basement .link {
-  display: inline-block;
-  line-height: 1.71;
-}
-
-.basement .tel {
-  margin-bottom: 0;
-}
-
-.footer-address > .link {
-  color: #ffffff;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.basement .mail,
-.basement .tel {
-  color: #ffffff99;
-  text-decoration: none;
-}
-
-.footer b {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+.footer .soclink-icon {
+  fill: #ffffff;
 }
 
 /* ======================FORM FOOTER=========================== */
 .footer-form-email {
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-  width: 358px;
+  padding-left: 16px;
+  width: 100%;
   height: 50px;
   font-family: Roboto;
   font-style: normal;
@@ -827,6 +845,10 @@ img {
 }
 
 .footer-sign-up-bth {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -843,6 +865,7 @@ img {
 }
 
 .sign-up-icon {
+  margin-left: 10px;
   fill: #ffffff;
 }
 

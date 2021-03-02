@@ -5,7 +5,9 @@
   padding-bottom: 60px;
 
   & h2 {
+    margin-top: 0;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &-list {
@@ -16,8 +18,14 @@
 
   & .item {
     margin: 15px;
-    flex-basis: calc(100% / 4 - 60px);
-    // flex-basis: calc((100%-60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients .item {
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -27,15 +35,8 @@
     padding-bottom: 94px;
   }
 
-  &-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  & .item {
-    width: 170px;
-    height: 90px;
+  .clients .item {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
