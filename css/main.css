@@ -244,6 +244,11 @@ img {
 }
 
 /* ========= soc-links-team================ */
+.socnetworks {
+  display: flex;
+  padding: 16px 32px 30px;
+}
+
 .socnetworks li {
   width: 44px;
   height: 44px;
@@ -252,6 +257,9 @@ img {
 }
 
 .soclink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -416,7 +424,6 @@ img {
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/maine/hero/hero-desktop.jpg);
   }
 }
@@ -494,8 +501,23 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  -list {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .benefits-list {
     display: flex;
+  }
+  .benefits-list {
+    display: flex;
+    margin: -15px;
+  }
+  .benefits__item {
+    margin: 15px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .benefits-list__title {
+    text-align: left;
   }
 }
 
@@ -559,12 +581,9 @@ img {
 
 /* ==================   TEAM  =============== */
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
-}
-
-.team-list {
-  margin: 0;
-  padding: 0;
 }
 
 .team .item {
@@ -577,10 +596,6 @@ img {
   color: #212121;
   text-decoration: none;
   outline: none;
-}
-
-.team-list .item + .item {
-  margin-left: 30px;
 }
 
 .team h3 {
@@ -604,6 +619,13 @@ img {
 .team img {
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* ===============CLIENTS=========== */

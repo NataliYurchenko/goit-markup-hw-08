@@ -53,17 +53,35 @@
       margin: 15px;
       flex-basis: calc(100% / 2 - 30px);
       // flex-basis: calc((100%-60px) / 2);
-      // height: 251px;
     }
     &-list__title {
       text-align: left;
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  &-list {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list {
+      display: flex;
+    }
+    // &__item:not(:last-child) {
+    //   margin-bottom: 15px;
+    // }
+
+    &-list {
+      display: flex;
+      margin: -15px;
+    }
+    &__item {
+      margin: 15px;
+      // flex-basis: calc(100% / 4 - 30px);
+      flex-basis: calc((100% - 120px) / 4);
+    }
+    &-list__title {
+      text-align: left;
+    }
   }
 }
 
