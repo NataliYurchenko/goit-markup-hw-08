@@ -375,7 +375,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 768px;
-  min-height: 400px;
+  max-height: 400px;
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
@@ -413,8 +413,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-bottom: 94px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/maine/hero/hero-desktop.jpg);
   }
 }
@@ -430,40 +432,71 @@ img {
     font-size: 44px;
     line-height: 1.364;
     letter-spacing: 0.06em;
+    margin-top: 0;
   }
 }
 
-/* =============== BENEFITS =========== */
-.benefits .list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-top: 0px;
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.benefits .benefits-details {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #757575;
-  line-height: 1.71;
-}
-
-.benefits-icon-list .item {
-  width: 270px;
+.benefits-div-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
 }
 
-.benefits-div-icon {
-  width: 100%;
-  height: 100%;
+.benefits-list__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.benefits-icon {
-  width: 70px;
-  height: 70px;
+.benefits-text {
+  margin: 0;
+  color: #757575;
+  line-height: 1.71;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .benefits {
+    padding-bottom: 45px;
+  }
+  .benefits__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .benefits__item {
+    margin: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  .benefits-list__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  -list {
+    display: flex;
+  }
 }
 
 /*=============JOB========================*/
