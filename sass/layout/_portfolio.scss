@@ -1,54 +1,79 @@
 /* ================ПОРТФОЛІО========================*/
 
-.navigation {
-  // display: flex;
-  // justify-content: center;
-  // align-items: start;
-  margin-bottom: 50px;
-}
-
-.navigation .item + .item {
-  margin-left: 8px;
-}
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &-list {
+    // width: 100%;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  // margin-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 50px;
   }
+}
 
-  &-item {
-    /* width: 370px; */
-    flex-basis: calc(100% / 3 - 30px);
-    margin: 15px;
+.navigation .item:not(:last-child) {
+  margin-right: 8px;
+}
 
-    background-color: $primary-white-color;
-    outline: 1px solid $frame-portfolio-photo;
-  }
+// =================================
 
-  &-text {
-    padding: 20px 24px;
-  }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
 
-  &-title {
-    margin-top: 0px;
-    margin-bottom: 4px;
+    &-item {
+      /* width: 370px; */
+      flex-basis: calc(100% / 3 - 30px);
+      margin: 15px;
 
-    color: $maine-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
+      background-color: $primary-white-color;
+      outline: 1px solid $frame-portfolio-photo;
+    }
 
-  &-type {
-    margin: 0px;
+    &-text {
+      padding: 20px 24px;
+    }
 
-    color: $secondary-text-color;
-    font-size: 16px;
+    &-title {
+      margin-top: 0px;
+      margin-bottom: 4px;
+
+      color: $maine-text-color;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+    }
+
+    &-type {
+      margin: 0px;
+
+      color: $secondary-text-color;
+      font-size: 16px;
+    }
   }
 }
 
