@@ -83,6 +83,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 /*COMPONENTS*/
 /*=========================LOGO=============================*/
 .logo {
@@ -256,7 +263,6 @@ img {
 .socnetworks {
   display: flex;
   justify-content: center;
-  padding: 16px 32px 30px;
 }
 
 .socnetworks li {
@@ -264,6 +270,10 @@ img {
   height: 44px;
   padding: 0;
   margin: 0;
+}
+
+.team .socnetworks {
+  padding: 16px 32px 30px;
 }
 
 .soclink {
@@ -599,7 +609,6 @@ img {
 }
 
 .team .item {
-  width: 450px;
   margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -761,6 +770,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
+
 .footer-logo-address > .logo {
   display: block;
   padding-top: 0;
@@ -775,6 +790,12 @@ img {
 
 .footer .tel {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .tel {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-address > .link {
@@ -800,9 +821,21 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer b {
+    margin-bottom: 25px;
+  }
+}
+
 .footer .socnetworks {
   margin: 0;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .socnetworks {
+    padding: 0;
+  }
 }
 
 .footer .soclink {
@@ -851,6 +884,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form .sign-up {
+    display: flex;
+  }
+}
+
 .footer-sign-up-bth {
   display: flex;
   margin: 0 auto;
@@ -869,6 +908,12 @@ img {
   background-origin: border-box;
   border: transparent;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-sign-up-bth {
+    margin-left: 12px;
+  }
 }
 
 .sign-up-icon {

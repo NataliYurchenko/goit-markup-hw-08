@@ -6,6 +6,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   &-logo-address > .logo {
     display: block;
     padding-top: 0;
@@ -20,6 +24,9 @@
 
   & .tel {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
   }
 
   &-address > .link {
@@ -44,11 +51,19 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 25px;
+    }
   }
 
   & .socnetworks {
     margin: 0;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
   }
 
   .soclink {
