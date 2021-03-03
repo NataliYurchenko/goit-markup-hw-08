@@ -54,8 +54,6 @@
 
 .button.secondary {
   padding: 6px 22px;
-  // padding-left: 22px;
-  // padding-right: 22px;
   width: 100%;
   margin-bottom: 15px;
 
@@ -100,6 +98,7 @@
 .mobile-menu-btn {
   display: inline-flex;
   margin: 0;
+  margin-right: 2px;
   padding: 0;
   border: none;
   background-color: transparent;

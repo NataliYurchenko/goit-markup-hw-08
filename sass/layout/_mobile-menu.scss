@@ -7,10 +7,9 @@
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-  // width: 100%;
+  padding-right: 15px;
   max-width: 480px;
   height: 796px;
-  border: 2px solid turquoise;
 
   color: $maine-text-color;
   font-family: Roboto;
@@ -31,7 +30,6 @@
   // transform: translate(-50%, -50%) rotate(1turn);
 
   @media screen and (min-width: 768px) {
-    border: 2px solid rebeccapurple;
     display: flex;
     position: static;
     align-items: center;
@@ -47,7 +45,6 @@
     line-height: 1.143;
   }
   @media screen and (min-width: 1200px) {
-    border: 2px solid red;
     min-width: 1040px;
   }
 }
@@ -70,14 +67,16 @@
   }
 }
 
-.site-nav-list .link {
+.site-nav .link {
   display: block;
   color: $maine-text-color;
   text-decoration: none;
+
   &:hover,
   &:hover {
     color: $accent-color;
   }
+
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -120,8 +119,6 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    // align-items: center;
-    // justify-content: center;
 
     .header-contact__item--mail {
       margin-bottom: 0px;

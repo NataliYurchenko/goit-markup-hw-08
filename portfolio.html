@@ -23,53 +23,102 @@
 
     <header class="header">
       <div class="container page-header">
-        <nav class="main-nav">
-          <a class="logo" href="/" target="_blank">
-            <span class="logo">Web</span
-            ><span class="logo header-studio">Studio</span>
-          </a>
+        <a class="logo" href="/" target="_blank">
+          <span class="logo">Web</span
+          ><span class="logo header-studio">Studio</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" data-menu-button>
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/maine/sprite.svg#icon-mob-menu "></use>
+          </svg>
+        </button>
 
-          <ul class="site-nav list">
-            <li class="item">
-              <a class="link" href="./" target="_blank"><span>Студия</span></a>
-            </li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html" target="_blank"
-                >Портфолио</a
+        <div class="mobile-menu-container" id="menu-container" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav-list list">
+              <li class="site-nav-list__item">
+                <a class="link" href="./" target="_blank"
+                  ><span>Студия</span></a
+                >
+              </li>
+              <li class="site-nav-list__item">
+                <a class="link current" href="./portfolio.html" target="_blank"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav-list__item">
+                <a class="link" href="./" target="_blank">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contact list">
+            <li class="header-contact__item--mail">
+              <a
+                class="header-contact__link--mail link"
+                href="mailto:info@devstudio.com"
               >
+                <svg class="header-contact__icon--mail">
+                  <use
+                    href="./images/maine/sprite.svg#icon-hat-envelopehover"
+                  ></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item">
-              <a class="link" href="" target="_blank">Контакти</a>
+            <li class="header-contact__item--tel">
+              <a
+                class="header-contact__link--tel link"
+                href="tel:+380961111111"
+              >
+                <svg class="header-contact__icon--tel">
+                  <use
+                    href="./images/maine/sprite.svg#icon-hat-smartphone"
+                  ></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contact list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="contact-mail-icon" width="16" height="12">
-                <use
-                  href="./images/maine/sprite.svg#icon-hat-envelopehover"
-                ></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="contact-tel-icon" width="10" height="16">
-                <use href="./images/maine/sprite.svg#icon-hat-smartphone"></use>
-              </svg>
 
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="mobile-menu-soclink-list list">
+            <li class="mobile-menu-soclink-list-item item">
+              <a href="" class="mobile-menu-soclink-link link" target="blank">
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-menu-soclink-list-item item">
+              <a href="" class="mobile-menu-soclink-link link" target="blank">
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-menu-soclink-list-item item">
+              <a href="./" class="mobile-menu-soclink-link link" target="blank">
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-menu-soclink-list-item item">
+              <a
+                href="./"
+                class="mobile-menu-soclink-link mobile-menu-soclink-link--Linkedin link"
+                target="blank"
+              >
+                Linkedin
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="mobile-menu-btn-close" data-menu-close>
+            <svg class="icon-cross" width="40" height="40">
+              <use href="./images/maine/sprite.svg#icon-close "></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
-    <main>
-      <!--=============PORTFOLIO===================-->
+    <!--=============PORTFOLIO===================-->
 
+    <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>

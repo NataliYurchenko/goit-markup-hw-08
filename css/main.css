@@ -195,6 +195,7 @@ img {
 .mobile-menu-btn {
   display: inline-flex;
   margin: 0;
+  margin-right: 2px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -424,7 +425,6 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 768px;
-  max-height: 400px;
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
@@ -1221,9 +1221,9 @@ div.relative {
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-right: 15px;
   max-width: 480px;
   height: 796px;
-  border: 2px solid turquoise;
   color: #212121;
   font-family: Roboto;
   font-weight: 500;
@@ -1240,7 +1240,6 @@ div.relative {
 
 @media screen and (min-width: 768px) {
   .mobile-menu-container {
-    border: 2px solid rebeccapurple;
     display: flex;
     position: static;
     align-items: center;
@@ -1258,7 +1257,6 @@ div.relative {
 
 @media screen and (min-width: 1200px) {
   .mobile-menu-container {
-    border: 2px solid red;
     min-width: 1040px;
   }
 }
@@ -1287,18 +1285,18 @@ div.relative {
   }
 }
 
-.site-nav-list .link {
+.site-nav .link {
   display: block;
   color: #212121;
   text-decoration: none;
 }
 
-.site-nav-list .link:hover, .site-nav-list .link:hover {
+.site-nav .link:hover, .site-nav .link:hover {
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav-list .link {
+  .site-nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
