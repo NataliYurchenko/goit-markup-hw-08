@@ -1,37 +1,19 @@
-/* ================ПОРТФОЛІО========================*/
-
-.portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  &-list {
-    // width: 100%;
-  }
-
-  &-item {
-    width: 405px;
-    height: 404px;
-  }
-}
+/* ================ PORTFOLIO ========================*/
+/* ================ PORTFOLIO NAV==============*/
 
 .navigation {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  // margin-bottom: 15px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: start;
     margin-bottom: 50px;
   }
 }
@@ -40,70 +22,82 @@
   margin-right: 8px;
 }
 
-// =================================
+/* ================ PORTFOLIO CARD-SET ========================*/
 
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    &-list {
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-list {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
     }
+  }
 
-    &-item {
-      /* width: 370px; */
-      // flex-basis: calc(100% / 3 - 30px);
-      flex-basis: calc((100% - 90px) / 3);
+  &-item {
+    width: 450px;
+    background-color: $primary-white-color;
+    outline: 1px solid $frame-portfolio-photo;
+
+    @media screen and (min-width: 768px) {
       margin: 15px;
-
-      background-color: $primary-white-color;
-      outline: 1px solid $frame-portfolio-photo;
+      flex-basis: calc((100% - 60px) / 2);
     }
-
-    &-text {
-      padding: 20px 24px;
-    }
-
-    &-title {
-      margin-top: 0px;
-      margin-bottom: 4px;
-
-      color: $maine-text-color;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
-      letter-spacing: 0.06em;
-    }
-
-    &-type {
-      margin: 0px;
-
-      color: $secondary-text-color;
-      font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 3);
     }
   }
-}
 
-.portfolio-link {
-  display: block;
-  width: 100%;
-  margin: 0;
-  text-decoration: none;
+  &-link {
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
 
-  transition-property: box-shadow, transform;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
+    transition-property: box-shadow, transform;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-}
 
-.portfolio-overlay {
-  position: relative;
-  overflow: hidden;
+  &-text {
+    padding: 20px 24px;
+  }
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 4px;
+
+    color: $maine-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &-type {
+    margin: 0px;
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+  }
+
+  &-overlay {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .portfolio-overlay-text {
@@ -135,3 +129,22 @@
     transform: translatey(0);
   }
 }
+
+// =================================
+
+// .portfolio-link {
+//   display: block;
+//   width: 100%;
+//   margin: 0;
+//   text-decoration: none;
+
+//   transition-property: box-shadow, transform;
+//   transition-duration: $transition-duration;
+//   transition-timing-function: $transition-timing-function;
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//   }
+// }
