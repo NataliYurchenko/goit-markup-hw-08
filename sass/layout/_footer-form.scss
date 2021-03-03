@@ -35,6 +35,12 @@
   }
 }
 
+.footer-sign-up {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+}
+
 .footer-sign-up-bth {
   display: flex;
   margin: 0 auto;

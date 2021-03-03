@@ -26,11 +26,12 @@
   align-items: center;
 }
 
-.footer.container {
+.footer .container {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
