@@ -195,7 +195,7 @@ img {
 .mobile-menu-btn {
   display: inline-flex;
   margin: 0;
-  margin-right: 2px;
+  margin-right: 6px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -438,23 +438,6 @@ img {
   }
 }
 
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
-  letter-spacing: 0.06em;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-title {
-    font-size: 44px;
-    line-height: 1.364;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1600px;
@@ -479,6 +462,23 @@ img {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/maine/hero/hero-desktop@2x.jpg);
+  }
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.364;
   }
 }
 
@@ -914,6 +914,7 @@ img {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  padding: 10px 32px;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -1215,6 +1216,7 @@ div.relative {
 
 /* ========MOBILE_MENU========*/
 .mobile-menu-container {
+  z-index: 1;
   position: absolute;
   display: none;
   background-color: #ffffff;

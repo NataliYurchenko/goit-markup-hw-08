@@ -29,22 +29,6 @@
       url(../images/maine/hero/hero-mob@2x.jpg);
   }
 
-  &-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    color: $primary-white-color;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
-    letter-spacing: 0.06em;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.364;
-    }
-  }
-
   @media screen and (min-width: 768px) {
     max-width: 1600px;
     background-image: linear-gradient(
@@ -85,6 +69,22 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/maine/hero/hero-desktop@2x.jpg);
+    }
+  }
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.364;
     }
   }
 }
