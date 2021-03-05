@@ -2,7 +2,8 @@
 
 .mobile-menu-container {
   z-index: 1;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   display: none;
   background-color: $primary-white-color;
   padding-left: 40px;
@@ -11,13 +12,13 @@
   padding-right: 15px;
   max-width: 480px;
   // height: 796px;
-  // max-width: 100vw;
+  max-width: 100vw;
   height: 100vh;
 
   color: $maine-text-color;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 10px;
   line-height: 1.175;
   letter-spacing: 0.02em;
 
@@ -25,6 +26,7 @@
     display: block;
     position: absolute;
     top: 0.1px;
+    left: 0, 1px;
   }
 
   // top: 50%;
