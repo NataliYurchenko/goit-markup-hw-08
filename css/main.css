@@ -1281,6 +1281,12 @@ div.relative {
   }
 }
 
+.laaaaa {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
 .site-nav {
   display: flex;
   justify-content: space-between;
