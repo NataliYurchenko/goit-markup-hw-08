@@ -1281,10 +1281,12 @@ div.relative {
   }
 }
 
-.laaaaa {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
+@media screen and (max-width: 767px) {
+  .laaaaa {
+    position: fixed;
+    bottom: 48px;
+    left: 40px;
+  }
 }
 
 .site-nav {
@@ -1484,9 +1486,15 @@ div.relative {
   top: 0;
   right: 0;
   display: block;
-  height: 22px;
+  height: 10px;
   width: 1px;
   background-color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-soclink-link::after {
+    height: 22px;
+  }
 }
 
 .site-nav-list__item .current {

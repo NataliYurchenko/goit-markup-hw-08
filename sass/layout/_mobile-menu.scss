@@ -57,10 +57,12 @@
   }
 }
 
-.laaaaa {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
+@media screen and (max-width: 767px) {
+  .laaaaa {
+    position: fixed;
+    bottom: 48px;
+    left: 40px;
+  }
 }
 
 .site-nav {
@@ -230,9 +232,12 @@
   top: 0;
   right: 0;
   display: block;
-  height: 22px;
+  height: 10px;
   width: 1px;
   background-color: $secondary-text-color;
+  @media screen and (min-width: 480px) {
+    height: 22px;
+  }
 }
 
 .site-nav-list__item .current {
@@ -251,6 +256,7 @@
     background-color: $accent-color;
     border-radius: 2px;
     align-self: flex-end;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
