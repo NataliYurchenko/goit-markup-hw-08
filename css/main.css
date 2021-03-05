@@ -1249,8 +1249,8 @@ div.relative {
 .mobile-menu-container.is-open {
   display: block;
   position: absolute;
-  top: 0.1px;
-  left: 0, 1px;
+  top: 0px;
+  left: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1371,7 +1371,7 @@ div.relative {
 
 .header-contact__link--tel {
   color: #2196f3;
-  font-size: 34px;
+  font-size: 10px;
   line-height: 1.176;
   text-decoration: none;
 }
@@ -1391,7 +1391,7 @@ div.relative {
 
 .header-contact__link--mail {
   color: #757575;
-  font-size: 24px;
+  font-size: 10px;
   line-height: 1.167;
   text-decoration: none;
 }
@@ -1443,7 +1443,7 @@ div.relative {
   margin-right: 10px;
   padding-right: 10px;
   color: #2196f3;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.222;
   text-decoration: none;
 }
