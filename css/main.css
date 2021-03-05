@@ -1235,8 +1235,7 @@ div.relative {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-right: 15px;
-  max-width: 480px;
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
   color: #212121;
   font-family: Roboto;
@@ -1244,6 +1243,12 @@ div.relative {
   font-size: 10px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-container {
+    font-size: 40px;
+  }
 }
 
 .mobile-menu-container.is-open {
@@ -1279,6 +1284,7 @@ div.relative {
 .site-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: auto;
 }
 
 .site-nav-list {
@@ -1376,6 +1382,12 @@ div.relative {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+  .header-contact__link--tel {
+    font-size: 34px;
+  }
+}
+
 .header-contact__link--tel:hover, .header-contact__link--tel:focus {
   color: #2196f3;
 }
@@ -1394,6 +1406,12 @@ div.relative {
   font-size: 10px;
   line-height: 1.167;
   text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .header-contact__link--mail {
+    font-size: 24px;
+  }
 }
 
 .header-contact__link--mail:hover, .header-contact__link--mail:focus {
@@ -1446,6 +1464,12 @@ div.relative {
   font-size: 10px;
   line-height: 1.222;
   text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-soclink-link {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu-soclink-link::after {
