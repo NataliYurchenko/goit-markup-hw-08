@@ -1253,7 +1253,7 @@ div.relative {
 
 .mobile-menu-container.is-open {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
 }
