@@ -5,10 +5,21 @@
   padding-bottom: 60px;
   background-color: $button-secondary-background;
 
-  & h2 {
-    margin-bottom: 30px;
-    text-align: center;
-  }
+  // & h2 {
+  //   margin-top: 0;
+  //   margin-bottom: 30px;
+
+  //   font-size: 28px;
+  //   line-height: 1.178;
+  //   text-align: center;
+  //   letter-spacing: 0.03em;
+
+  //   @media screen and (min-width: 1200px) {
+  //     margin-bottom: 50px;
+  //     font-size: 36px;
+  //     line-height: 1.167;
+  //   }
+  // }
 
   & .item {
     margin-bottom: 30px;
@@ -77,6 +88,6 @@
   .team .item {
     margin: 15px;
     flex-basis: calc(100% / 4 - 60px);
-    // flex-basis: calc((100%-60px) / 2);
+    // flex-basis: calc((100%-120px) / 4);
   }
 }

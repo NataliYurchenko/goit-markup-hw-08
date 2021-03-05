@@ -34,3 +34,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
+// section {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+//   }
+
+//     & .benefits {
+//     @media screen and (min-width: 1200px) {
+//       padding-bottom: 0;
+//     }
+
+// }
