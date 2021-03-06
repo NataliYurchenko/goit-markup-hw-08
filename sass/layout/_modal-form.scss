@@ -175,6 +175,7 @@ div.relative {
 }
 
 .exept0 {
+  display: inline-block;
   margin-left: 4px;
   font-size: 12px;
   line-height: 1.167;
@@ -189,6 +190,7 @@ div.relative {
 
 .chekbox-text {
   @media screen and (max-width: 479px) {
+    display: inline-block;
     font-size: 8px;
   }
 }
